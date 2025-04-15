@@ -1,6 +1,6 @@
 # **Vizionary - README** 🎨🚀
 
-![Dashboard](images/1.PNG)
+![Dashboard](img/image-1.jpeg)
 
 **Vizionary** is a powerful, interactive web platform that lets users write, execute, and visualize Python and R code directly in the browser. It uses secure Docker containers for backend execution and features a sleek React-based frontend for smooth user experience.
 
