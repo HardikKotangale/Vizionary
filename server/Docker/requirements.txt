@@ -1,0 +1,6 @@
+matplotlib
+plotly
+flask
+flask-cors
+uuid
+pandas

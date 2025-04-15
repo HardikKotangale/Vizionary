@@ -1,0 +1,136 @@
+.history-page {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(ellipse at top, #0e0b18 0%, #09090f 100%);
+  color: white;
+}
+
+.history-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, #6a00f4, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(106, 0, 244, 0.25));
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.history-card {
+  background: #16161f;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 30px rgba(106, 0, 244, 0.07);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.history-card:hover {
+  box-shadow: 0 0 40px rgba(106, 0, 244, 0.2);
+  transform: translateY(-3px);
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.card-row:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  color: #aaa;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.value {
+  font-weight: 600;
+  color: #eaeaea;
+}
+
+.share-row .link-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thumb {
+  width: 80px;
+  height: 60px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.08);
+}
+
+.share-link {
+  color: white;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.share-link:hover {
+  color: #60a5fa;
+  text-shadow: 0 0 6px rgba(96, 165, 250, 0.5);
+}
+
+.history-empty {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 3rem 0;
+}
+.copy-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  transition: color 0.25s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.copy-button:hover {
+  color: #000000;
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(196, 201, 207, 0.4);
+}
+
+
+.copied-label {
+  font-size: 0.8rem;
+  color: #4ade80;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  animation: fadein 0.2s ease-in;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

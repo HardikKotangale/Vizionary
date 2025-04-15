@@ -1,0 +1,63 @@
+.lux-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.lux-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.lux-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.lux-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(106, 0, 244, 0.8), 0 0 12px rgba(0, 119, 255, 0.6);
+}
+
+.lux-link.active {
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(106, 0, 244, 0.8);
+}
+
+.lux-link.active::after,
+.lux-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+
+  border-radius: 2px;
+}
+.logo-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.25);
+}

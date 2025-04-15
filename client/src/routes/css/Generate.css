@@ -1,0 +1,164 @@
+.generate-page {
+  min-height: calc(100vh - 80px); /* space below header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(
+    to bottom,
+    #0a0a12 0%,
+    #100b1c 20%,
+    #150d25 60%,
+    #0b0b12 100%
+  );
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.generate-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1600px;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.code-panel,
+.output-panel,
+.mpl-preview {
+  flex: 1;
+  min-width: 400px;
+  max-width: 1400px;
+  background: #16161f;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(106, 0, 244, 0.1);
+}
+
+/* Controls */
+.code-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+}
+
+button {
+  background: #6a00f4;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #7e22ce;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 220px;
+  background: #1a1a25;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Output Panel */
+.output-panel iframe,
+.output-panel img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 20px rgba(106, 0, 244, 0.2);
+}
+
+.loading {
+  color: #a855f7;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.placeholder-text {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Matplotlib Preview */
+.mpl-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #6a00f4, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mpl-box {
+  background: #1e1e28;
+  height: 250px;
+  width: 100%;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #555;
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* or auto-fit depending on output panel height */
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top: 4px solid #a855f7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

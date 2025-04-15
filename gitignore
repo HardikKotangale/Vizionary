@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
+*.sqlite3
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Node
+node_modules/
+dist/
+.build/
+
+# OS
+.DS_Store
+
+# Docker
+*.log
+*.pid
+docker-compose.override.yml
+
+# VS Code
+.vscode/
+
+# Temp
+server/temp/
